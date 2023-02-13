@@ -51,10 +51,10 @@ class _ToDoListPageState extends State<ToDoListPage> {
     super.initState();
     _database = Future(() async {
       return openDatabase(
-        join(
+        // join(
           await getDatabasesPath(),
-          'task_database.db',
-        ),
+        //   'task_database.db',
+        // ),
         onCreate: (db, version) {
           db.execute("CREATE TABLE tasks(id INTEGER PRIMARY KEY, name TEXT)");
         },

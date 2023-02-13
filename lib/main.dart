@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:stopwatch/Moniter%20Counter/Examiner.dart';
+import 'package:stopwatch/Moniter%20Counter/key_counter.dart';
 import 'Clock/stopwatch.dart';
 import 'Task manager/task manager.dart';
 
 void main() {
-  runApp(TodoListApp());
+  runApp(MainWidget());
 }
 
 class MainWidget extends StatelessWidget {
@@ -13,7 +15,7 @@ class MainWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StopwatchTimer(),
+      home: Examiner(),
     );
   }
 }

@@ -18,6 +18,7 @@ class _KeyCounterState extends State<KeyCounter> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
+                autofocus: true,
                 decoration: InputDecoration(
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
               hintText: 'Key Counter',
@@ -25,7 +26,7 @@ class _KeyCounterState extends State<KeyCounter> {
                 onChanged: (text) {
                   setState(() {
                     _keyPressCount++;
-                    print(_keyPressCount);
+                    // print(_keyPressCount);
                   });
                 },
               ),
